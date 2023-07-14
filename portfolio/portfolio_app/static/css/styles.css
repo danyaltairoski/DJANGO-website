@@ -1,0 +1,148 @@
+/* static/css/styles.css */
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+/* Styles for the about me section */
+.about-me-section {
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+/* Styles for the projects section */
+.projects-section {
+  padding: 20px;
+}
+
+.projects-section h2 {
+  margin-bottom: 10px;
+}
+
+.projects-section p {
+  margin-bottom: 10px;
+}
+
+.projects-section img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.projects-section a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 3px;
+}
+
+/* Styles for the education section */
+.education-section {
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.education-section h2 {
+  margin-bottom: 10px;
+}
+
+.education-section p {
+  margin-bottom: 10px;
+}
+
+/* Styles for the skills section */
+.skills-section {
+  padding: 20px;
+}
+
+.skills-section h2 {
+  margin-bottom: 10px;
+}
+
+/* Styles for the work experience section */
+.work-experience-section {
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.work-experience-section h2 {
+  margin-bottom: 10px;
+}
+
+.work-experience-section p {
+  margin-bottom: 10px;
+}
+
+/* Styles for the testimonials section */
+.testimonials-section {
+  padding: 20px;
+}
+
+.testimonials-section h2 {
+  margin-bottom: 10px;
+}
+
+.testimonials-section p {
+  margin-bottom: 10px;
+}
+
+/* Media queries for mobile devices */
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .about-me-section,
+  .education-section,
+  .work-experience-section {
+    padding: 10px;
+  }
+
+  .projects-section,
+  .skills-section,
+  .testimonials-section {
+    padding: 10px;
+  }
+
+  /* Adjust other styles as needed for better mobile display */
+}

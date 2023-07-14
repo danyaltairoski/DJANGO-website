@@ -1,0 +1,20 @@
+<!-- templates/portfolio_app/work_experience.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="work-experience-section">
+    <h1>Work Experience</h1>
+    <ul>
+      {% for work_exp in work_experience %}
+        <li>
+          <h2>{{ work_exp.company }}</h2>
+          <p>{{ work_exp.position }}</p>
+          <!-- Add more fields as needed -->
+        </li>
+      {% empty %}
+        <li>No work experience available.</li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}

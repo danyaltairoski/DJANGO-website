@@ -1,0 +1,20 @@
+<!-- templates/portfolio_app/education.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="education-section">
+    <h1>Education and Qualifications</h1>
+    <ul>
+      {% for edu in education %}
+        <li>
+          <h2>{{ edu.institution }}</h2>
+          <p>{{ edu.degree }}</p>
+          <!-- Add more fields as needed -->
+        </li>
+      {% empty %}
+        <li>No education information available.</li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}

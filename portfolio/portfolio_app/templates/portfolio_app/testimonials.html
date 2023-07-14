@@ -1,0 +1,20 @@
+<!-- templates/portfolio_app/testimonials.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="testimonials-section">
+    <h1>Testimonials and Recommendations</h1>
+    <ul>
+      {% for testimonial in testimonials %}
+        <li>
+          <h2>{{ testimonial.name }}</h2>
+          <p>{{ testimonial.testimonial }}</p>
+          <!-- Add more fields as needed -->
+        </li>
+      {% empty %}
+        <li>No testimonials available.</li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}

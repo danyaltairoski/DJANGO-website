@@ -1,0 +1,19 @@
+<!-- templates/portfolio_app/skills.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="skills-section">
+    <h1>Technical Skills</h1>
+    <ul>
+      {% for skill in skills %}
+        <li>
+          <h2>{{ skill.name }}</h2>
+          <!-- Add more fields as needed -->
+        </li>
+      {% empty %}
+        <li>No skills available.</li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}
